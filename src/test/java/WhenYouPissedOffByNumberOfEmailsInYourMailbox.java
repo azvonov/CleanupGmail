@@ -39,9 +39,11 @@ public class WhenYouPissedOffByNumberOfEmailsInYourMailbox {
     public void YouStartThisJobAndRelax() throws InterruptedException {
 
         open("https://mail.google.com/mail/u/1/#inbox/p7");
-        $x("//input[@type='email']").should(appear).setValue("testy@slated.com");
+        //set email
+        $x("//input[@type='email']").should(appear).setValue("");
         $(byText("Next")).click();
-        $x("//input[@type='password']").should(appear).setValue("ASOCXytT99WOWvXw");
+        //set password
+        $x("//input[@type='password']").should(appear).setValue("");
         $(byText("Next")).click();
         $x("//div[@class='Cp']//tr[1]").should(appear);
         while ($$x("//div[@class='Cp']//tr").size() > 2) {

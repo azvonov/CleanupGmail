@@ -24,6 +24,7 @@ buildNumber.properties
 .mtj.tmp/
 
 # Package Files
+build
 *.jar
 *.war
 *.ear
@@ -47,6 +48,7 @@ logs/
 
 # JetBrains IDEs
 .idea/
+.idea
 *.iml
 
 
